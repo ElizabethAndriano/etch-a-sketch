@@ -30,8 +30,8 @@ body {
   display: flex;
   flex-wrap: wrap;
  
-  width: 160px;
-  height: 160px;
+  width: 400px;
+  height: 400px;
   background-color: #edd2cb;
 }
 

@@ -1,14 +1,16 @@
 sketchpad = document.querySelector('#sketchpad');
 
-MAX = 16*16;
+side = 16;
 
-for(i = 0; i < MAX; i++){
+for(i = 0; i < side**2; i++){
     div = document.createElement('div');
 
     i % 2 == 0 ? div.classList.add('sketch') : div.classList.add('sketch1');
 
-    div.style.width = '10px';
-    div.style.height = '10px';
+    size = (400/side).toString() + 'px'
+
+    div.style.width = size;
+    div.style.height = size;
 
     sketchpad.appendChild(div);
     console.log(i)
